@@ -1,10 +1,10 @@
 import React from 'react'
-import SimpleBarChart from './components/SimpleBarChart'
+import Header from './components/Header'
 
 const App = () => {
   return (
-    <div className=' '>App
-    <SimpleBarChart/>
+    <div >
+      <Header/>
     </div>
   )
 }
