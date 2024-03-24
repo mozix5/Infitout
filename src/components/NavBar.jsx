@@ -1,7 +1,7 @@
 import React from "react";
 import Icon from "../icons/Logo";
 import ThunderIcon from "../icons/ThunderIcon";
-const Header = () => {
+const NavBar = () => {
   return (
     <div className="w-screen h-16 shadow-md px-32">
       <div className="flex h-full items-center justify-between">
@@ -36,4 +36,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;

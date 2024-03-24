@@ -1,12 +1,12 @@
-import React from 'react'
-import Header from './components/Header'
+import React from "react";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
-    <div >
-      <Header/>
+    <div className=" bg-[#FBFDFF]">
+      <NavBar />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
