@@ -13,12 +13,10 @@ export const data = [
       },
     },
     support_resistance: {
-      support: {
+      Indicators: {
         S1: 21943.62,
         S2: 21872.63,
         S3: 21732.98,
-      },
-      resistance: {
         R1: 22083.27,
         R2: 22151.93,
         R3: 22291.58,
@@ -26,7 +24,7 @@ export const data = [
     },
     moving_averages: {
       Sentiments: { Bearish: 14, Neutral: 8, Bullish: 5 },
-      Indicators: {
+      Indicators_detailed: {
         "EMA (5)": {
           value: 22091.28,
           position: "S",
@@ -99,7 +97,7 @@ export const data = [
     },
     Oscillators: {
       Sentiments: { Bearish: 4, Neutral: 6, Bullish: 0 },
-      Indicators: {
+      Indicators_detailed: {
         "RSI (14)": {
           value: 40.38,
           position: "N",
@@ -157,12 +155,10 @@ export const data = [
       },
     },
     support_resistance: {
-      support: {
+      Indicators: {
         S1: 21943.62,
         S2: 21872.63,
         S3: 21732.98,
-      },
-      resistance: {
         R1: 22083.27,
         R2: 22151.93,
         R3: 22291.58,
@@ -170,7 +166,7 @@ export const data = [
     },
     moving_averages: {
       Sentiments: { Bearish: 8, Neutral: 2, Bullish: 7 },
-      Indicators: {
+      Indicators_detailed: {
         "EMA (5)": {
           position: "S",
           value: 22096.01,
@@ -243,7 +239,7 @@ export const data = [
     },
     Oscillators: {
       Sentiments: { Bearish: 3, Neutral: 7, Bullish: 0 },
-      Indicators: {
+      Indicators_detailed: {
         "RSI (14)": {
           position: "N",
           value: 46.95,
@@ -301,12 +297,10 @@ export const data = [
       },
     },
     support_resistance: {
-      support: {
+      Indicators: {
         S1: 21943.62,
         S2: 21872.63,
         S3: 21732.98,
-      },
-      resistance: {
         R1: 22083.27,
         R2: 22151.93,
         R3: 22291.58,
@@ -318,7 +312,7 @@ export const data = [
         Neutral: 2,
         Bullish: 8,
       },
-      Indicators: {
+      Indicators_detailed: {
         "EMA (5)": {
           position: "S",
           value: 22101.14,
@@ -395,7 +389,7 @@ export const data = [
         Neutral: 7,
         Bullish: 1,
       },
-      Indicators: {
+      Indicators_detailed: {
         "RSI (14)": {
           position: "N",
           value: 51.51,
@@ -453,8 +447,10 @@ export const data = [
       },
     },
     support_resistance: {
-      support: { S1: 21759.13, S2: 21521.92, S3: 20900.97 },
-      resistance: {
+      Indicators: {
+        S1: 21759.13,
+        S2: 21521.92,
+        S3: 20900.97,
         R1: 22380.08,
         R2: 22763.82,
         R3: 23384.77,
@@ -466,7 +462,7 @@ export const data = [
         Neutral: 2,
         Bullish: 8,
       },
-      Indicators: {
+      Indicators_detailed: {
         "EMA (5)": {
           position: "S",
           value: 22094.01,
@@ -539,7 +535,7 @@ export const data = [
     },
     Oscillators: {
       Sentiments: { Bearish: 0, Neutral: 10, Bullish: 0 },
-      Indicators: {
+      Indicators_detailed: {
         "RSI (14)": {
           position: "N",
           value: 55.85,
@@ -597,12 +593,10 @@ export const data = [
       },
     },
     support_resistance: {
-      support: {
+      Indicators: {
         S1: 21759.13,
         S2: 21521.92,
         S3: 20900.97,
-      },
-      resistance: {
         R1: 22380.08,
         R2: 22763.82,
         R3: 23384.77,
@@ -610,7 +604,7 @@ export const data = [
     },
     moving_averages: {
       Sentiments: { Bearish: 0, Neutral: 10, Bullish: 0 },
-      Indicators: {
+      Indicators_detailed: {
         "RSI (14)": {
           position: "N",
           value: 55.85,
@@ -655,7 +649,7 @@ export const data = [
     },
     Oscillators: {
       Sentiments: { Bearish: 0, Neutral: 8, Bullish: 2 },
-      Indicators: {
+      Indicators_detailed: {
         "RSI (14)": {
           position: "N",
           value: 58.31,
@@ -713,8 +707,10 @@ export const data = [
       },
     },
     support_resistance: {
-      support: { S1: 21576.17, S2: 21169.53, S3: 20402.23 },
-      resistance: {
+      Indicators: {
+        S1: 21576.17,
+        S2: 21169.53,
+        S3: 20402.23,
         R1: 22343.47,
         R2: 22704.13,
         R3: 23471.43,
@@ -726,7 +722,7 @@ export const data = [
         Neutral: 1,
         Bullish: 14,
       },
-      Indicators: {
+      Indicators_detailed: {
         "EMA (5)": {
           position: "B",
           value: 22016.03,
@@ -799,7 +795,7 @@ export const data = [
     },
     Oscillators: {
       Sentiments: { Bearish: 1, Neutral: 9, Bullish: 0 },
-      Indicators: {
+      Indicators_detailed: {
         "RSI (14)": {
           position: "N",
           value: 51.48,
