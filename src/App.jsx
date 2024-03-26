@@ -4,7 +4,7 @@ import Home from "./Pages/Home";
 
 const App = () => {
   return (
-    <div className=" bg-[#FBFDFF]">
+    <div className=" bg-[#FBFDFF] overflow-x-hidden">
       <NavBar />
       <Home />
     </div>
