@@ -30,12 +30,12 @@ const Home = () => {
   }, [activeIndex]);
 
   return (
-    <div className="flex justify-center items-center w-screen">
-      <div className="w-[70%] flex flex-col justify-center py-4">
-        <div className="flex justify-center  rounded-md bg-white shadow-[0px_3px_20px_#162B740A]">
+    <div className="flex justify-center items-center w-screen relative">
+      <div className="w-[94%] lg:w-[70%] flex flex-col justify-center py-4">
+        <div className="flex justify-center w-fit self-center rounded-md bg-white shadow-[0px_3px_20px_#162B740A]">
           {renderFilterButtons()}
         </div>
-        <div className="flex ">
+        <div className="flex mt-6">
           <div className="pt-1 cursor-pointer pr-2">
             <Back height="20px" width="20px" />
           </div>
@@ -52,7 +52,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="grid w-full grid-cols-2 gap-5 pt-4">
+        <div className="grid w-full md:grid-cols-2 gap-5 pt-4">
           {Object.keys(filteredData).map((item, index) => (
             <Card
               filteredData={filteredData[item]}

@@ -41,7 +41,7 @@ export const Card = ({ filteredData, title }) => {
 
   const IndicatorsGroup = ({ title, value }) => {
     return (
-      <div className=" text-[13px] w-32">
+      <div className=" text-[13px] w-24 lg:w-32">
         <div>{value}</div>
         <div className="text-[#9BABC6]">{title}</div>
       </div>
@@ -54,15 +54,15 @@ export const Card = ({ filteredData, title }) => {
     // Define colors based on sentiment
     switch (value.position.toLowerCase()) {
       case "s":
-        bgColor = "#FFE2EB";
+        bgColor = "#ffe2eb";
         textColor = "#EB1D54";
         break;
       case "b":
-        bgColor = "#E2E8F0";
+        bgColor = "#eeeeff";
         textColor = "#4A5568";
         break;
       case "n":
-        bgColor = "#C6F6D5";
+        bgColor = "#ececec";
         textColor = "#38A169";
         break;
       default:
@@ -85,8 +85,13 @@ export const Card = ({ filteredData, title }) => {
   return (
     <div className=" bg-white shadow-[0px_3px_20px_#162B740A] py-4 rounded-xl relative min-h-96">
       <div className=" capitalize px-4 font-semibold">{title}</div>
-      <div className=" flex flex-col justify-center px-16 pt-2">
-        <BarChart />
+      <div className=" flex flex-col justify-center md:px-16 pt-2">
+        <BarChart
+          width="400"
+          height="130"
+          title={title}
+          to={"Bar" + (Math.floor(Math.random() * 17) + 1)}
+        />
         <div>
           {filteredData.Sentiments && (
             <div className="flex justify-between px-6">
@@ -104,7 +109,7 @@ export const Card = ({ filteredData, title }) => {
         </div>
       </div>
       {filteredData.Indicators && (
-        <div className="px-16 grid grid-cols-3 place-items-center mt-10 gap-4 absolute bottom-4">
+        <div className="px-4 lg:px-16 grid grid-cols-3 place-items-center mt-10 gap-4 absolute bottom-6">
           {Object.keys(filteredData.Indicators).map((item, index) => {
             return (
               <IndicatorsGroup
@@ -117,7 +122,7 @@ export const Card = ({ filteredData, title }) => {
         </div>
       )}
       {filteredData.Indicators_detailed && (
-        <div className="px-16 grid grid-flow-row gap-4 mt-10">
+        <div className="lg:px-16 px-8 grid grid-flow-row gap-4 mt-10">
           {Object.keys(filteredData.Indicators_detailed)
             .slice(0, showAllRows ? undefined : 2)
             .map((item, index) => {
