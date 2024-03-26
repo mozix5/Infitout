@@ -12,7 +12,7 @@ export const data = [
         "CCI (20)": -97.47,
       },
     },
-    support_resistance: {
+    "Support & Resistance": {
       Indicators: {
         S1: 21943.62,
         S2: 21872.63,
@@ -22,7 +22,7 @@ export const data = [
         R3: 22291.58,
       },
     },
-    moving_averages: {
+    "Moving averages": {
       Sentiments: { Bearish: 14, Neutral: 8, Bullish: 5 },
       Indicators_detailed: {
         "EMA (5)": {
@@ -154,7 +154,7 @@ export const data = [
         "CCI (20)": -79.31,
       },
     },
-    support_resistance: {
+    "Support & Resistance": {
       Indicators: {
         S1: 21943.62,
         S2: 21872.63,
@@ -164,7 +164,7 @@ export const data = [
         R3: 22291.58,
       },
     },
-    moving_averages: {
+    "Moving averages": {
       Sentiments: { Bearish: 8, Neutral: 2, Bullish: 7 },
       Indicators_detailed: {
         "EMA (5)": {
@@ -296,7 +296,7 @@ export const data = [
         "CCI (20)": -32.52,
       },
     },
-    support_resistance: {
+    "Support & Resistance": {
       Indicators: {
         S1: 21943.62,
         S2: 21872.63,
@@ -306,7 +306,7 @@ export const data = [
         R3: 22291.58,
       },
     },
-    moving_averages: {
+    "Moving averages": {
       Sentiments: {
         Bearish: 7,
         Neutral: 2,
@@ -446,7 +446,7 @@ export const data = [
         "CCI (20)": null,
       },
     },
-    support_resistance: {
+    "Support & Resistance": {
       Indicators: {
         S1: 21759.13,
         S2: 21521.92,
@@ -456,7 +456,7 @@ export const data = [
         R3: 23384.77,
       },
     },
-    moving_averages: {
+    "Moving averages": {
       Sentiments: {
         Bearish: 7,
         Neutral: 2,
@@ -592,7 +592,7 @@ export const data = [
         "CCI (20)": 76.55,
       },
     },
-    support_resistance: {
+    "Support & Resistance": {
       Indicators: {
         S1: 21759.13,
         S2: 21521.92,
@@ -602,7 +602,7 @@ export const data = [
         R3: 23384.77,
       },
     },
-    moving_averages: {
+    "Moving averages": {
       Sentiments: { Bearish: 0, Neutral: 10, Bullish: 0 },
       Indicators_detailed: {
         "RSI (14)": {
@@ -706,7 +706,7 @@ export const data = [
         "Macd (12, 26, 9)": -43.9,
       },
     },
-    support_resistance: {
+    "Support & Resistance": {
       Indicators: {
         S1: 21576.17,
         S2: 21169.53,
@@ -716,7 +716,7 @@ export const data = [
         R3: 23471.43,
       },
     },
-    moving_averages: {
+    "Moving averages": {
       Sentiments: {
         Bearish: 2,
         Neutral: 1,
