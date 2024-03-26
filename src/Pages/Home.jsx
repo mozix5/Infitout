@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FilterButton from "../components/FilterButton";
 import Nse from "../icons/Nse";
 import Back from "../icons/Back";
 import Arrow from "../icons/Arrow";
+import { Card } from "../components/Card";
+import { data } from "../assets/data.js";
 
 const Home = () => {
   const timeRange = ["5min", "10min", "15min", "30min", "hour", "1 Day"];
   const [activeIndex, setActiveIndex] = useState(5);
-
+  const [filteredData, setFilteredData] = useState([]);
   const handleClick = (index) => {
     setActiveIndex(index);
   };
@@ -23,8 +25,12 @@ const Home = () => {
     ));
   };
 
+  useEffect(() => {
+    setFilteredData(data[activeIndex]);
+  }, [activeIndex]);
+
   return (
-    <div className="flex justify-center items-center ">
+    <div className="flex justify-center items-center w-screen">
       <div className="w-[70%] flex flex-col justify-center py-4">
         <div className="flex justify-center  rounded-md bg-white shadow-[0px_3px_20px_#162B740A]">
           {renderFilterButtons()}
@@ -45,6 +51,16 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="grid w-full grid-cols-2 gap-5 pt-4">
+          {Object.keys(filteredData).map((item, index) => (
+            <Card
+              filteredData={filteredData[item]}
+              sentiments={filteredData[item]}
+              key={index}
+              title={item}
+            />
+          ))}
         </div>
       </div>
     </div>
