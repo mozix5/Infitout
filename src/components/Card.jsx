@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import BarChart from "./BarChart";
+import Back from "../icons/Back";
 
 export const Card = ({ filteredData, title }) => {
   const [showAllRows, setShowAllRows] = useState(false);
@@ -130,9 +131,12 @@ export const Card = ({ filteredData, title }) => {
             })}
           <button
             onClick={() => setShowAllRows(!showAllRows)}
-            className="text-base text-[#9BABC6] place-self-end w-28"
+            className="text-base text-[#9BABC6] place-self-end w-28 flex items-center gap-2"
           >
             {showAllRows ? "View less" : "View Details"}
+            <div className={showAllRows ? "rotate-90" : "-rotate-90"}>
+              <Back height="12x" width="12px" />
+            </div>
           </button>
         </div>
       )}
